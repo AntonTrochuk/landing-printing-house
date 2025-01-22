@@ -1,3 +1,11 @@
+@font-face {
+	font-family: "Jura";
+	font-style: normal;
+	font-weight: 400;
+	src: url("/fonts/Jura-VariableFont_wght.woff") format("woff");
+	font-display: swap;
+}
+
 .page__body {
 
 	@media (min-width: 1440px) {
@@ -35,6 +43,10 @@
 
 .navigation__logo-img {
 	margin-right: 50px;
+}
+
+.naigation__social-network-link {
+	text-decoration: none;
 }
 
 .initial-banner {
@@ -242,5 +254,72 @@
 	font-size: 20px;
 	background-color: #022AF5;
 	color: white
+}
 
+.approach {
+	margin-bottom: 40px;
+}
+
+.approach__container {
+	background-color: #E6F7FF;
+	border-radius: 30px;
+	padding: 40px;
+}
+
+.approach__container-subtitle {
+	width: 500px;
+	font-family: "Jura", serif;
+	font-size: 30px;
+	margin: 0;
+}
+
+.approach__container-list {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0;
+	gap: 20px;
+}
+
+.approach__container-item {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	border-radius: 15px;
+}
+
+.approach__container-section-description {
+	width: 700px;
+	padding: 40px;
+}
+
+.approach__container-section-description-subtitle {
+	font-family: "Jura", serif;
+	font-size: 25px;
+}
+
+.approach__container-section-description-text {
+	font-family: "Jura", serif;
+	font-size: 20px;
+}
+
+.img-left {
+	order: -1;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer__list {
+	font-family: "Jura", serif;
+	font-weight: 700;
+	font-size: 17px;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
 }

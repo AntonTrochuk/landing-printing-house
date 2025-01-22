@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jura:wght@300..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Kurenaido&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<script src="/contact-send.js"></script>
 </head>
@@ -26,9 +25,15 @@
 				</picture>
 			</div>
 			<div class="naigation__social-network">
-				<img src="/image/instagram.png" width="40" height="40" alt="">
-				<img src="/image/whatsapp.png" width="40" height="40" alt="">
-				<img src="/image/pinterest.png" width="40" height="40" alt="">
+				<a class="naigation__social-network-link" href="">
+					<img src="/image/instagram.png" width="40" height="40" alt="">
+				</a>
+				<a class="naigation__social-network-link" href="">
+					<img src="/image/whatsapp.png" width="40" height="40" alt="">
+				</a>
+				<a class="naigation__social-network-link" href="">
+					<img src="/image/pinterest.png" width="40" height="40" alt="">
+				</a>
 			</div>
 		</nav>
 	</header>
@@ -103,6 +108,42 @@
 				</div>
 			</div>
 		</section>
+		<section class="main-container__approach approach">
+			<div class="approach__container">
+				<h3 class="approach__container-subtitle">
+					Мы полностью пересмотрели подход к работе с клиентами
+				</h3>
+				<ul class="approach__container-list">
+					<li class="approach__container-item">
+						<div class="approach__container-section-description">
+							<h3 class="approach__container-section-description-subtitle">
+								Учитываем потребности каждого клиента
+							</h3>
+							<p class="approach__container-section-description-text">
+								Мы внимательно анализируем индивидуальные запросы и предпочтения каждого клиента, чтобы предложить решения, максимально соответствующие их ожиданиям и удовлетворяющие их уникальные потребности.
+							</p>
+						</div>
+						<img class="approach__container-img" width="300" height="300" src="/image/container-img1.png" alt="">
+					</li>
+					<li class="approach__container-item">
+						<div class="approach__container-section-description">
+							<h3 class="approach__container-section-description-subtitle">
+								Повысили качество обслуживания на каждом этапе
+							</h3>
+							<p class="approach__container-section-description-text">
+								Мы улучшили процесс обслуживания клиентов, начиная от первого контакта и заканчивая пост-продажной поддержкой, чтобы обеспечить стабильный и высокий уровень обслуживания на каждом этапе взаимодействия.
+							</p>
+						</div>
+						<img class="approach__container-img img-left" width="300" height="300" src="/image/container-img2.png" alt=""> <!--переделать на nth-child-->
+					</li>
+				</ul>
+			</div>
+			<div class="approach__container-clients">
+				<h3 class="approach__container-clients">
+
+				</h3>
+			</div>
+		</section>
 		<section class="main-container__contact contact" id="contact">
 			<h3 class="contact__subtitle">
 				Оставьте Ваш номер телефона и менеджер свяжется с вами
@@ -115,8 +156,25 @@
 			</div>
 		</section>
 	</main>
-	<footer class="main-footer">
-
+	<footer class="main-footer footer">
+		<ul class="footer__list">
+			<li class="footer__item">
+				Контакты
+			</li>
+			<li class="footer__item">
+				Сотрудничество
+			</li>
+			<li class="footer__item">
+				Работать у нас
+			</li>
+		</ul>
+		<div class="navigation__logo">
+			<picture class="navigation__logo-picture-icon">
+				<source media="(min-width: 1440px)" width="450" height="100" type="image/png" srcset="image/logo1.png">
+				<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/logo.png">
+				<img class="navigation__logo-img" src="image/logo1.png" width="140" height="40" alt="Логотип Врамке">
+			</picture>
+		</div>
 	</footer>
 </body>
 
