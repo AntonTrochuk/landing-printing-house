@@ -1,8 +1,8 @@
 <?php
 // Файлы phpmailer
-require 'phpmailer/PHPMailer.php';
-require 'phpmailer/SMTP.php';
-require 'phpmailer/Exception.php';
+require __DIR__ . '/PHPMailer/PHPMailer.php';
+require __DIR__ . '/PHPMailer/SMTP.php';
+require __DIR__ . '/PHPMailer/Exception.php';
 
 # проверка, что ошибки нет
 if (!error_get_last()) {
@@ -34,8 +34,8 @@ if (!error_get_last()) {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'Врамке'; // Логин на почте
-    $mail->Password   = 'emry eefm zshf drkl'; // Пароль на почте
+    $mail->Username   = 'leonside19@gmail.com'; // Логин на почте
+    $mail->Password   = 'tgbrwexuacawcfnw'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('leonside19@gmail.com', 'Врамке'); // Адрес самой почты и имя отправителя
