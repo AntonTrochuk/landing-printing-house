@@ -12,11 +12,13 @@
 		width: 1200px;
 		margin: 0 auto;
 		margin-top: 50px;
+		background-color: #3c94db;
 	}
 }
 
 .navigation {
-
+	position: relative;
+	z-index: 5;
 	@media (min-width: 1440px) {
 		padding: 0 50px 0 50px;
 		display: flex;
@@ -25,20 +27,22 @@
 		height: 100px;
 		border-radius: 50px;
 		box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-		margin-bottom: 50px;
+		background-color: #022AF5;
 	}
 }
 
-.navigation__link {
+.navigation__communication {
+	display: flex;
+	flex-direction: column;
+}
+
+.navigation__communication-link {
 	font-family: "Jura", serif;
-	font-weight: 500;
-	font-size: 15px;
+	font-weight: 700;
+	font-size: 18px;
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
-	padding: 15px 10px;
-	background-color: #022AF5;
-	border-radius: 25px;
 }
 
 .navigation__logo-img {
@@ -50,7 +54,8 @@
 }
 
 .initial-banner {
-	position: relative;
+	margin-top: -65px;
+
 	@media (min-width: 1440px) {
 		width: 1200px;
 		height: 570px;
@@ -58,83 +63,65 @@
 }
 
 .initial-banner__container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	@media (min-width: 1440px) {
-		width: 1200px;
-		height: 500px;
-		background-color: #0784E7;
-		border-radius: 30px;
-		gap: 50px;
-	}
+	border-radius: 30px;
 }
 
-.initial-banner__section-text {
-	font-family: "Jura", serif;
-	color: white;
-	font-weight: 600;
-	@media (min-width: 1440px) {
-		width: 750px;
-		margin: 0 auto;
-		padding-top: 40px;
-		text-align: center;
-	}
+.initial-banner__slogan {
+	margin: 150px 50px 20px 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	pointer-events: auto;
 }
 
 .initial-banner__subtitle {
+	font-family: "Jura", serif;
+	color: white;
+	font-weight: 700;
+	width: 650px;
+	margin: 0 auto;
 	margin: 0;
-	margin-top: 25px;
-	line-height: 50px;
+	line-height: 70px;
+	z-index: 2;
 
 	@media (min-width: 1440px) {
-		font-size: 35px;
+		font-size: 85px;
 		margin-bottom: 35px;
-	}
-}
-
-.initial-banner__subtitle-highlighted {
-	background-color: white;
-	color: black;
-	border-radius: 20px;
-	padding: 5px;
-}
-
-.initial-banner__text {
-	@media (min-width: 1440px) {
-		width: 500px;
-		margin: 0 auto;
-		font-size: 20px;
+		position: relative;
 	}
 }
 
 .initial-banner__link {
+	position: relative;
 	text-decoration: none;
 	color: black;
 	text-transform: uppercase;
 	font-family: "Jura", serif;
 	background-color: #C5F948;
-	border-radius: 25px;
+	border-radius: 30px;
+	height: 30px;
+	z-index: 3;
 
 	@media (min-width: 1440px) {
 		font-weight: 700;
-		font-size: 15px;
-		padding: 15px 10px;
+		font-size: 25px;
+		padding: 20px 15px;
 	}
 }
 
-.initial-banner__img {
-	position: absolute;
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-.img-left {
-	bottom: 0;
-	left: 0;
-}
-
-.img-right {
-	right: 0;
-	bottom: 0;
+.fullscreen-bg {
+	overflow: hidden;
+	pointer-events: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 .about-section {
@@ -144,8 +131,8 @@
 .about-section__subtitle {
 	font-family: "Jura", serif;
 	font-weight: 700;
-	font-size: 25px;
-	color: black;
+	font-size: 30px;
+	color: white;
 
 	@media (min-width: 1440px) {
 		width: 750px;
@@ -165,6 +152,7 @@
 	height: 450px;
 	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 	border-radius: 25px;
+	background-color: white;
 }
 
 .about-section__item-img {
@@ -204,13 +192,39 @@
 	font-family: "Jura", serif;
 }
 
-.main-footer {
-	margin-top: 30px;
-	height: 150px;
-	border-top-left-radius: 25px;
-  	border-top-right-radius: 25px;
-	background-color: #EEEEEE;
+/*----- services -----*/
+
+.services {
+	background-color: white;
+	border-radius: 30px;
+	font-family: "Jura", serif;
 }
+
+.services__container {
+	padding: 25px;
+}
+
+.services__img {
+	background-size: cover;
+	border-radius: 30px;
+}
+
+.services__advertising {
+	display: flex;
+}
+
+.services__advertising-description {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.services__advertising-text {
+	display: flex;
+	flex-direction: column;
+}
+
+/*----- contact -----*/
 
 .main-container__contact {
 	height: 400px;
@@ -256,56 +270,12 @@
 	color: white
 }
 
-.approach {
-	margin-bottom: 40px;
-}
-
-.approach__container {
-	background-color: #E6F7FF;
-	border-radius: 30px;
-	padding: 40px;
-}
-
-.approach__container-subtitle {
-	width: 500px;
-	font-family: "Jura", serif;
-	font-size: 30px;
-	margin: 0;
-}
-
-.approach__container-list {
-	list-style: none;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 0;
-	gap: 20px;
-}
-
-.approach__container-item {
-	display: flex;
-	justify-content: space-between;
-	background-color: white;
-	border-radius: 15px;
-}
-
-.approach__container-section-description {
-	width: 700px;
-	padding: 40px;
-}
-
-.approach__container-section-description-subtitle {
-	font-family: "Jura", serif;
-	font-size: 25px;
-}
-
-.approach__container-section-description-text {
-	font-family: "Jura", serif;
-	font-size: 20px;
-}
-
-.img-left {
-	order: -1;
+.main-footer {
+	margin-top: 30px;
+	height: 150px;
+	border-top-left-radius: 25px;
+  	border-top-right-radius: 25px;
+	background-color: #EEEEEE;
 }
 
 .footer {

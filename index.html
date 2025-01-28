@@ -14,14 +14,19 @@
 <body class="page__body">
 	<header class="main-header">
 		<nav class="main-header__navigation navigation">
-			<a class="navigation__link" href="#contact">
-				Связаться с менеджером
-			</a>
+			<div class="navigation__communication ">
+				<a class="navigation__communication-link" href="tel:+74956660266">
+					+7 (812) 812-12-12
+				</a>
+				<a class="navigation__communication-link" href="#">
+					Fotosalonvramke@mail.ru
+				</a>
+			</div>
 			<div class="navigation__logo">
 				<picture class="navigation__logo-picture-icon">
-					<source media="(min-width: 1440px)" width="450" height="100" type="image/png" srcset="image/logo1.png">
+					<source media="(min-width: 1440px)" width="450" height="100" type="image/png" srcset="image/logo12.png">
 					<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/logo.png">
-					<img class="navigation__logo-img" src="image/logo1.png" width="140" height="40" alt="Логотип Врамке">
+					<img class="navigation__logo-img" src="image/logo12.png" width="140" height="40" alt="Логотип Врамке">
 				</picture>
 			</div>
 			<div class="naigation__social-network">
@@ -39,25 +44,21 @@
 	</header>
 	<main class="main-container">
 		<section class="main-container__initial-banner initial-banner">
-			<div class="initial-banner__container">
-				<div class="initial-banner__section-text">
+			<div class="initial-banner__container fullscreen-bg">
+				<div class="initial-banner__slogan">
 					<h3 class="initial-banner__subtitle">
-						Врамке это полноценное производство качественной
-						<span class="initial-banner__subtitle-highlighted">
-							печатной продукции
-						</span>
+						Производство качественной печатной продукции
 					</h3>
-					<p class="initial-banner__text">
-						Наше оборудование позволяет создавать высококачественную продукцию с использованием различных материалов-основ.
-					</p>
+					<a class="initial-banner__link" href="#contact">
+						Связаться с менеджером
+					</a>
 				</div>
-				<a class="initial-banner__link" href="#contact">
-					Связаться с менеджером
-				</a>
-				<img class="initial-banner__img img-left" src="/image/initial_banner_foto1.png" width="320" height="320" alt="">
-				<img class="initial-banner__img img-right" src="/image/initial_banner_foto2.png" width="320" height="320" alt="">
+				<video loop="" muted="" autoplay="" poster="video/plane.jpg" class="fullscreen-bg__video">
+					<source src="/plane.mp4" type="video/mp4">
+				</video>
 			</div>
 		</section>
+
 		<section class="main-container__about-section about-section">
 			<div class="about-section__container">
 				<h3 class="about-section__subtitle">
@@ -108,40 +109,76 @@
 				</div>
 			</div>
 		</section>
-		<section class="main-container__approach approach">
-			<div class="approach__container">
-				<h3 class="approach__container-subtitle">
-					Мы полностью пересмотрели подход к работе с клиентами
-				</h3>
-				<ul class="approach__container-list">
-					<li class="approach__container-item">
-						<div class="approach__container-section-description">
-							<h3 class="approach__container-section-description-subtitle">
-								Учитываем потребности каждого клиента
-							</h3>
-							<p class="approach__container-section-description-text">
-								Мы внимательно анализируем индивидуальные запросы и предпочтения каждого клиента, чтобы предложить решения, максимально соответствующие их ожиданиям и удовлетворяющие их уникальные потребности.
-							</p>
+		<section class="main-container__services services">
+			<div class="services__container">
+				<div class="services__advertising">
+					<div class="services__advertising-description">
+						<h3 class="services__advertising-subtitle">
+							Наружная реклама
+						</h3>
+						<div class="services__advertising-text">
+							<span>Журналы</span>
+							<span>Журналы</span>
+							<span>Журналы</span>
+							<span>Журналы</span>
 						</div>
-						<img class="approach__container-img" width="300" height="300" src="/image/container-img1.png" alt="">
-					</li>
-					<li class="approach__container-item">
-						<div class="approach__container-section-description">
-							<h3 class="approach__container-section-description-subtitle">
-								Повысили качество обслуживания на каждом этапе
-							</h3>
-							<p class="approach__container-section-description-text">
-								Мы улучшили процесс обслуживания клиентов, начиная от первого контакта и заканчивая пост-продажной поддержкой, чтобы обеспечить стабильный и высокий уровень обслуживания на каждом этапе взаимодействия.
-							</p>
+						<button>
+							Оставить заявку
+						</button>
+					</div>
+					<img class="services__img" src="/image/p1.jpg" width="550" height="420" alt="">
+				</div>
+				<div class="services__printing">
+					<div class="services__printing-description">
+						<h3 class="services__printing-subtitle">
+							Типография
+						</h3>
+						<div class="services__printing-text">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
 						</div>
-						<img class="approach__container-img img-left" width="300" height="300" src="/image/container-img2.png" alt=""> <!--переделать на nth-child-->
-					</li>
-				</ul>
-			</div>
-			<div class="approach__container-clients">
-				<h3 class="approach__container-clients">
-
-				</h3>
+						<button>
+							Оставить заявку
+						</button>
+					</div>
+					<img class="services__img" src="/image/p2.jpg" width="550" height="420" alt="">
+				</div>
+				<div class="services__souvenir">
+					<div class="services__souvenir-description">
+						<h3 class="services__souvenir-subtitle">
+							Сувенирные товары
+						</h3>
+						<div class="services__souvenir-text">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<button>
+							Оставить заявку
+						</button>
+					</div>
+					<img class="services__img" src="/image/p3.jpg" width="550" height="420" alt="">
+				</div>
+				<div class="services__digital">
+					<div class="services__digital-description">
+						<h3 class="services__digital-subtitle">
+							Цифровая печать
+						</h3>
+						<div class="services__digital-text">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<button>
+							Оставить заявку
+						</button>
+					</div>
+					<img class="services__img" src="/image/p4.jpg" width="550" height="420" alt="">
+				</div>
 			</div>
 		</section>
 		<section class="main-container__contact contact" id="contact">
