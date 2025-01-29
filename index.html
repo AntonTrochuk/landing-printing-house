@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="style.css">
 	<script src="/contact-send.js"></script>
+	<script src="/slider.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -31,13 +32,13 @@
 			</div>
 			<div class="naigation__social-network">
 				<a class="naigation__social-network-link" href="">
-					<img src="/image/instagram.png" width="40" height="40" alt="">
+					<img src="/image/instagram.png" width="50" height="50" alt="">
 				</a>
 				<a class="naigation__social-network-link" href="">
-					<img src="/image/whatsapp.png" width="40" height="40" alt="">
+					<img src="/image/whatsapp.png" width="50" height="50" alt="">
 				</a>
 				<a class="naigation__social-network-link" href="">
-					<img src="/image/pinterest.png" width="40" height="40" alt="">
+					<img src="/image/pinterest.png" width="50" height="50" alt="">
 				</a>
 			</div>
 		</nav>
@@ -112,6 +113,14 @@
 		<section class="main-container__services services">
 			<div class="services__container">
 				<div class="services__card advertising">
+					<div class="services__container-image image-slider">
+						<img class="services__img advertising-img" src="/image/p2.jpg" width="1300" height="700" alt="" id="advertisingImageMain">
+						<img class="services__img advertising-img visually-hidden" src="/image/p1.jpg" width="1300" height="700" alt="">
+						<img class="services__img advertising-img visually-hidden" src="/image/p3.jpg" width="1300" height="700" alt="">
+						<img class="services__img advertising-img visually-hidden" src="/image/p4.jpg" width="1300" height="700" alt="">
+						<button class="services__button-image button-image--left" type="button" id="buttonLeft"></button>
+						<button class="services__button-image button-image--right" type="button" id="buttonRight"></button>
+					</div>
 					<div class="services__description advertising-description">
 						<h3 class="services__subtitle">
 							Наружная реклама
@@ -126,13 +135,13 @@
 							Оставить заявку
 						</button>
 					</div>
+				</div>
+				<div class="services__card printing">
 					<div class="services__container-image">
-						<img class="services__img" src="/image/p2.jpg" width="700" height="420" alt="" id="advertisingImage">
+						<img class="services__img" src="/image/p1.jpg" width="1300" height="700" alt="" id="printingImage">
 						<button class="services__button-image button-image--left "></button>
 						<button class="services__button-image button-image--right "></button>
 					</div>
-				</div>
-				<div class="services__card printing">
 					<div class="services__description printing-description">
 						<h3 class="services__subtitle">
 							Типография
@@ -147,18 +156,20 @@
 							Оставить заявку
 						</button>
 					</div>
-					<div class="services__container-image">
-						<img class="services__img" src="/image/p1.jpg" width="700" height="420" alt="" id="printingImage">
-					</div>
 				</div>
 				<div class="services__card souvenir">
+					<div class="services__container-image">
+						<img class="services__img" src="/image/p3.jpg" width="1300" height="700" alt="" id="souvenirImage">
+						<button class="services__button-image button-image--left "></button>
+						<button class="services__button-image button-image--right "></button>
+					</div>
 					<div class="services__description souvenir-description">
 						<h3 class="services__subtitle">
 							Сувенирные товары
 						</h3>
 						<div class="services__section-text souvenir-text">
-							<span class="services__text">Печать на холсте</span>
-							<span class="services__text">Печать на кружках</span>
+							<span class="services__text">Холсты</span>
+							<span class="services__text">Кепки</span>
 							<span class="services__text">Фотосветильники</span>
 							<span class="services__text">Лазерная гравировка</span>
 						</div>
@@ -166,11 +177,13 @@
 							Оставить заявку
 						</button>
 					</div>
-					<div class="services__container-image">
-						<img class="services__img" src="/image/p3.jpg" width="700" height="420" alt="" id="souvenirImage">
-					</div>
 				</div>
 				<div class="services__card digital">
+					<div class="services__container-image">
+						<img class="services__img" src="/image/p4.jpg" width="1300" height="700" alt="" id="digitalImage">
+						<button class="services__button-image button-image--left"></button>
+						<button class="services__button-image button-image--right"></button>
+					</div>
 					<div class="services__description digital-description">
 						<h3 class="services__subtitle">
 							Цифровая печать
@@ -184,9 +197,6 @@
 						<button class="services__button">
 							Оставить заявку
 						</button>
-					</div>
-					<div class="services__container-image">
-						<img class="services__img" src="/image/p4.jpg" width="700" height="420" alt="" id="digitalImage">
 					</div>
 				</div>
 			</div>
