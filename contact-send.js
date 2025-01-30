@@ -1,3 +1,5 @@
+
+
 async function submitForm(event) {
 	event.preventDefault(); // отключаем перезагрузку/перенаправление страницы
 	try {
@@ -17,6 +19,8 @@ async function submitForm(event) {
 		const json = await response.json();
 		if (json.result === "success") {
 			// в случае успеха
+			const modalWindowDOMElement = document.querySelector('.modal-window');
+			modalWindowDOMElement.classList.add('modal-window--close');
 			alert(json.info);
 		} else {
 			// в случае ошибки
