@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="style.css">
 	<script src="/contact-send.js"></script>
+	<script src="/modal-window.js" defer></script>
 	<script src="/slider.js" defer></script>
 </head>
 
@@ -50,9 +51,9 @@
 					<h3 class="initial-banner__subtitle">
 						Производство качественной печатной продукции
 					</h3>
-					<a class="initial-banner__link" href="#contact">
-						Связаться с менеджером
-					</a>
+					<button class="initial-banner__button" type="button">
+						Оставить заявку
+					</button>
 				</div>
 				<video loop="" muted="" autoplay="" poster="video/plane.jpg" class="fullscreen-bg__video">
 					<source src="/plane.mp4" type="video/mp4">
@@ -114,12 +115,12 @@
 			<div class="services__container">
 				<div class="services__card advertising">
 					<div class="services__container-image image-slider">
-						<img class="services__img advertising-img" src="/image/p2.jpg" width="1300" height="700" alt="" id="advertisingImageMain">
+						<img class="services__img advertising-img" src="/image/p2.jpg" width="1300" height="700" alt="">
 						<img class="services__img advertising-img visually-hidden" src="/image/p1.jpg" width="1300" height="700" alt="">
 						<img class="services__img advertising-img visually-hidden" src="/image/p3.jpg" width="1300" height="700" alt="">
 						<img class="services__img advertising-img visually-hidden" src="/image/p4.jpg" width="1300" height="700" alt="">
-						<button class="services__button-image button-image--left" type="button" id="buttonLeft"></button>
-						<button class="services__button-image button-image--right" type="button" id="buttonRight"></button>
+						<button class="services__button-image slider-button-left" type="button"></button>
+						<button class="services__button-image slider-button-right" type="button"></button>
 					</div>
 					<div class="services__description advertising-description">
 						<h3 class="services__subtitle">
@@ -136,11 +137,14 @@
 						</button>
 					</div>
 				</div>
-				<div class="services__card printing">
+				<div class="services__container-image image-slider">
 					<div class="services__container-image">
-						<img class="services__img" src="/image/p1.jpg" width="1300" height="700" alt="" id="printingImage">
-						<button class="services__button-image button-image--left "></button>
-						<button class="services__button-image button-image--right "></button>
+						<img class="services__img" src="/image/p1.jpg" width="1300" height="700" alt="">
+						<img class="services__img visually-hidden" src="/image/p2.jpg" width="1300" height="700" alt="">
+						<img class="services__img visually-hidden" src="/image/p3.jpg" width="1300" height="700" alt="">
+						<img class="services__img visually-hidden" src="/image/p4.jpg" width="1300" height="700" alt="">
+						<button class="services__button-image slider-button-left" type="button"></button>
+						<button class="services__button-image slider-button-right" type="button"></button>
 					</div>
 					<div class="services__description printing-description">
 						<h3 class="services__subtitle">
@@ -158,10 +162,13 @@
 					</div>
 				</div>
 				<div class="services__card souvenir">
-					<div class="services__container-image">
-						<img class="services__img" src="/image/p3.jpg" width="1300" height="700" alt="" id="souvenirImage">
-						<button class="services__button-image button-image--left "></button>
-						<button class="services__button-image button-image--right "></button>
+					<div class="services__container-image image-slider">
+						<img class="services__img" src="/image/p3.jpg" width="1300" height="700" alt="">
+						<img class="services__img visually-hidden" src="/image/p4.jpg" width="1300" height="700" alt="">
+						<img class="services__img visually-hidden" src="/image/p2.jpg" width="1300" height="700" alt="">
+						<img class="services__img visually-hidden" src="/image/p1.jpg" width="1300" height="700" alt="">
+						<button class="services__button-image slider-button-left" type="button"></button>
+						<button class="services__button-image slider-button-right" type="button"></button>
 					</div>
 					<div class="services__description souvenir-description">
 						<h3 class="services__subtitle">
@@ -179,10 +186,13 @@
 					</div>
 				</div>
 				<div class="services__card digital">
-					<div class="services__container-image">
-						<img class="services__img" src="/image/p4.jpg" width="1300" height="700" alt="" id="digitalImage">
-						<button class="services__button-image button-image--left"></button>
-						<button class="services__button-image button-image--right"></button>
+					<div class="services__container-image image-slider">
+						<img class="services__img" src="/image/p4.jpg" width="1300" height="700" alt="">
+						<img class="services__img" src="/image/p1.jpg" width="1300" height="700" alt="">
+						<img class="services__img" src="/image/p2.jpg" width="1300" height="700" alt="">
+						<img class="services__img" src="/image/p3.jpg" width="1300" height="700" alt="">
+						<button class="services__button-image slider-button-left" type="button"></button>
+						<button class="services__button-image slider-button-right" type="button"></button>
 					</div>
 					<div class="services__description digital-description">
 						<h3 class="services__subtitle">
@@ -233,6 +243,30 @@
 			</picture>
 		</div>
 	</footer>
+
+	<section class="modal-window modal-window--close">
+		<div class="modal-container">
+			<h3 class="contact__subtitle">
+				Оставьте Ваш номер телефона и менеджер свяжется с вами
+			</h3>
+			<div>
+				<form class="contact__form-block" enctype="multipart/form-data" method="post" id="form" onsubmit="submitForm(event)" action="/send.php">
+					<input class="contact__input" name="name" type="text" placeholder="Введите имя">
+					<input class="contact__input" name="name" type="text" placeholder="Введите номер телефона">
+					<input class="contact__button" value="Отправить" type="submit">
+				</form>
+			</div>
+			<button class="modal-window__button button-close">
+				<span class="visually-hidden">Закрыть</span>
+			</button>
+		</div>
+	</section>
+
+	<!--Модальное окно-->
+	<template id="modalWindow">
+
+	</template>
+
 </body>
 
 </html>

@@ -1,30 +1,35 @@
-const buttonRight = document.getElementById('buttonRight');
-const buttonLeft = document.getElementById('buttonLeft');
-const images = Array.from(document.querySelectorAll('.advertising-img'));
-let currentIndex = 0;
+const sliders = document.querySelectorAll('.image-slider');
 
-const updateSlider = () => {
-  images.forEach((img, index) => {
-    if (index === currentIndex) {
-      img.classList.remove('visually-hidden');
-    } else {
-      img.classList.add('visually-hidden');
-    }
-  });
-};
+sliders.forEach((slider) => {
+	const buttonRight = slider.querySelector('.slider-button-right');
+	const buttonLeft = slider.querySelector('.slider-button-left');
+	const images = Array.from(slider.querySelectorAll('.services__img'));
+	let currentIndex = 0;
 
 
-updateSlider();
+	const updateSlider = () => {
+		images.forEach((img, index) => {
+			if (index === currentIndex) {
+				img.classList.remove('visually-hidden');
+			} else {
+				img.classList.add('visually-hidden');
+			}
+		});
+	};
 
 
-buttonRight.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % images.length;
-  updateSlider();
-});
+	updateSlider();
 
 
-buttonLeft.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  updateSlider();
+	buttonRight.addEventListener('click', () => {
+		currentIndex = (currentIndex + 1) % images.length;
+		updateSlider();
+	});
+
+
+	buttonLeft.addEventListener('click', () => {
+		currentIndex = (currentIndex - 1 + images.length) % images.length;
+		updateSlider();
+	});
 });
 
