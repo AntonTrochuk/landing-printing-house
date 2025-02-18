@@ -23,7 +23,7 @@
 		width: 1400px;
 		margin: 0 auto;
 		margin-top: 20px;
-		background-color: #41B3BF;
+		background-color: #c5cbe3;
 	}
 }
 
@@ -38,8 +38,8 @@
 		height: 120px;
 		border-radius: 50px;
 		box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-		background-color: #163C40;
-		/*background-color: #022AF5;*/
+		background-color: #4056A1;
+		/*background-color: #022AF5;   162540*/
 	}
 }
 
@@ -112,8 +112,8 @@
 	color: black;
 	text-transform: uppercase;
 	font-family: "Jura", serif;
-	/*background-color: #C5F948;*/
-	background-color: #94E9F2;
+	/*background-color: #C5F948; 94E9F2*/
+	background-color: #f13c20;
 	border-radius: 10px;
 	z-index: 3;
 	border: none;
