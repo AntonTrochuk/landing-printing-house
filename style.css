@@ -38,7 +38,7 @@
 		height: 120px;
 		border-radius: 50px;
 		box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-		background-color: #4056A1;
+		background-color: #2441a1;
 		/*background-color: #022AF5;   162540*/
 	}
 }
@@ -67,11 +67,10 @@
 
 .initial-banner {
 	margin-top: -65px;
-	margin-bottom: -45px;
+	margin-bottom: 0;
 
 	@media (min-width: 1440px) {
 		width: 1400px;
-		height: 650px;
 	}
 }
 
@@ -80,7 +79,7 @@
 }
 
 .initial-banner__slogan {
-	margin: 180px 50px 20px 50px;
+	margin: 180px 50px 200px 50px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -102,6 +101,16 @@
 		margin-bottom: 35px;
 		position: relative;
 	}
+}
+
+.initial-banner__preview-subtitle {
+	color: white;
+	font-family: "Jura", serif;
+	font-weight: 600;
+	font-size: 30px;
+	margin: 0 0 0 50px;
+	padding: 30px 0 30px 0;
+
 }
 
 .initial-banner__button {
@@ -130,6 +139,7 @@
     top: 0;
     left: 0;
     width: 100%;
+	z-index: -1;
 }
 
 .fullscreen-bg {
@@ -140,9 +150,11 @@
     width: 100%;
 }
 
-.about-section__preview {
+.initial-banner__preview {
+	margin-top: -50px;
+	z-index: 4;
 	/*background-color: rgb(247, 77, 15);*/
-	background-color:#163C40;
+	background-color: #2441a1;
 	border-radius: 30px;
 }
 
