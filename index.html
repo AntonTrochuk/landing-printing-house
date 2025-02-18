@@ -5,8 +5,6 @@
 	<meta charset="UTF-8">
 	<title>Врамке</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="style.css">
 	<script src="/contact-send.js"></script>
 	<script src="/modal-window.js" defer></script>
@@ -16,90 +14,151 @@
 <body class="page__body">
 	<header class="main-header">
 		<nav class="main-header__navigation navigation">
-			<div class="navigation__communication ">
-				<a class="navigation__communication-link" href="tel:+74956660266">
+			<address class="navigation__communication">
+				<a class="navigation__communication-link text-header-link" href="tel:+74956660266">
 					+7 (812) 812-12-12
 				</a>
-				<a class="navigation__communication-link" href="#">
+				<a class="navigation__communication-link text-header-link" href="Fotosalonvramke@mail.ru">
 					Fotosalonvramke@mail.ru
 				</a>
-			</div>
+			</address>
 			<div class="navigation__logo">
 				<picture class="navigation__logo-picture-icon">
-					<source media="(min-width: 1440px)" width="450" height="100" type="image/png" srcset="image/logo12.png">
+					<source media="(min-width: 1440px)" width="550" height="50" type="image/png" srcset="image/logo123.png">
 					<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/logo.png">
-					<img class="navigation__logo-img" src="image/logo12.png" width="140" height="40" alt="Логотип Врамке">
+					<img class="navigation__logo-img" src="/image/logo123.png" width="140" height="40" alt="Логотип Врамке">
 				</picture>
 			</div>
-			<div class="naigation__social-network">
-				<a class="naigation__social-network-link" href="">
-					<img src="/image/instagram.png" width="50" height="50" alt="">
-				</a>
-				<a class="naigation__social-network-link" href="">
-					<img src="/image/whatsapp.png" width="50" height="50" alt="">
-				</a>
-				<a class="naigation__social-network-link" href="">
-					<img src="/image/pinterest.png" width="50" height="50" alt="">
-				</a>
-			</div>
+			<ul class="naigation__social-network">
+				<li class="naigation__social-network-item">
+					<a class="naigation__social-network-link" href="">
+						<img src="/image/instagram1.png" width="50" height="50" alt="">
+					</a>
+				</li>
+				<li class="naigation__social-network-item">
+					<a class="naigation__social-network-link" href="">
+						<img src="/image/whatsapp1.png" width="50" height="50" alt="">
+					</a>
+				</li>
+				<li class="naigation__social-network-item">
+					<a class="naigation__social-network-link" href="">
+						<img src="/image/pinterest1.png" width="50" height="50" alt="">
+					</a>
+				</li>
+			</ul>
 		</nav>
 	</header>
 	<main class="main-container">
+		<h1 class="visually-hidden">
+			Рекламно-полиграфическая компания Врамке
+		</h1>
 		<section class="main-container__initial-banner initial-banner">
 			<div class="initial-banner__container fullscreen-bg">
 				<div class="initial-banner__slogan">
-					<h3 class="initial-banner__subtitle">
-						Производство качественной печатной продукции
-					</h3>
-					<button class="initial-banner__button button-js" type="button">
-						Оставить заявку
-					</button>
+					<video loop="" muted="" autoplay="" poster="video/plane.jpg" class="fullscreen-bg__video">
+						<source src="/plane.mp4" type="video/mp4">
+					</video>
+					<div class="initial-banner__block-text">
+						<h3 class="initial-banner__subtitle heading1">
+							Производство качественной печатной продукции
+						</h3>
+						<button class="initial-banner__button text-button button-js" type="button">
+							Оставить заявку
+						</button>
+					</div>
 				</div>
-				<video loop="" muted="" autoplay="" poster="video/plane.jpg" class="fullscreen-bg__video">
-					<source src="/plane.mp4" type="video/mp4">
-				</video>
-			</div>
-			<div class="initial-banner__preview">
-				<h3 class="initial-banner__preview-subtitle">
-					C 2014 года доставляем полиграфию по всей России
-				</h3>
 			</div>
 		</section>
-		<section class="main-container__about-section about-section">
-			<div class="about-section__container">
-				<div class="about-section__card">
-					<ul class="about-section__list">
-						<li class="about-section__item">
-							<div class="services__container-image image-slider item-block-big">
-								<img class="services__img advertising-img" src="/image/p2.jpg" width="1000" height="500" alt="">
-								<img class="services__img advertising-img visually-hidden" src="/image/p1.jpg" width="1000" height="500" alt="">
-								<img class="services__img advertising-img visually-hidden" src="/image/p3.jpg" width="1000" height="500" alt="">
-								<img class="services__img advertising-img visually-hidden" src="/image/p4.jpg" width="1000" height="500" alt="">
-								<button class="services__button-image slider-button-left" type="button"></button>
-								<button class="services__button-image slider-button-right" type="button"></button>
-							</div>
-							<div class="item-block-small">
-								<h3 class="services__subtitle">
-									Наружная реклама
-								</h3>
-								<div class="services__section-text advertising-text">
-									<span class="services__text">
-										Мы занимаемся печатью и изготовлением различной рекламной продукции, в частности баннеры, брендирование авто, штендеры, адресные таблички, световые вывески, фотозоны и многого другого.
 
-									</span>
-								</div>
-								<button class="services__button button-js">
-									Оставить заявку
-								</button>
-							</div>
+		<section class="main-container__we-offer we-offer">
+			<div class="we-offer__container">
+				<div class="we-offer__content-block">
+					<div class="we-offer__text-block">
+						<h2 class="we-offer__subtitle heading2 ">
+							Мы предлагаем Вам
+						</h2>
+						<span class="we-offer__text second-text">
+							Полный спектр полиграфических услуг
+						</span>
+					</div>
+					<ul class="we-offer__list">
+						<li class="we-offer__item">
+							<a class="we-offer__link offer-text-link link-advertising" href="#">
+								Наружная реклама
+							</a>
 						</li>
-						<li class="about-section__item">
-
+						<li class="we-offer__item">
+							<a class="we-offer__link offer-text-link link-digital " href="#">
+								Цифровая печать
+							</a>
+						</li>
+						<li class="we-offer__item">
+							<a class="we-offer__link offer-text-link link-souvenir" href="#">
+								Сувенирные товары
+							</a>
+						</li>
+						<li class="we-offer__item">
+							<a class="we-offer__link offer-text-link link-souvenir" href="#">
+								Сувенирные товары
+							</a>
 						</li>
 					</ul>
 				</div>
+				<!--<img class="we-offer__img" width="800" height="490" src="./image/man-working-printing-house-with-paper-paints (1).jpg" alt="Картинка предлагаемых услуг"> -->
 			</div>
 		</section>
+
+		<section class="main-container__about-section about-section">
+			<div class="about-section">
+				<ul class="about-section__card">
+					<li class="about-section__item section-image image-slider">
+						<img class="services__img advertising-img" src="/image/slider1.jpg" width="910" height="500" alt="">
+						<img class="services__img advertising-img visually-hidden" src="/image/slider2.jpg" width="910" height="500" alt="">
+						<button class="services__button-image slider-button-left" type="button"></button>
+						<button class="services__button-image slider-button-right" type="button"></button>
+					</li>
+					<li class="about-section__item section-text">
+						<h3 class="services__subtitle">
+							Наружная реклама
+						</h3>
+						<div class="services__section-text advertising-text">
+							<p class="services__text">
+								Мы занимаемся печатью и изготовлением различной рекламной продукции, в частности баннеры, брендирование авто, штендеры, адресные таблички, световые вывески, фотозоны и многого другого.
+							</p>
+						</div>
+						<button class="services__button button-js">
+							Оставить заявку
+						</button>
+					</li>
+
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer class="main-footer footer">
+		<ul class="footer__list">
+			<li class="footer__item">
+				Контакты
+			</li>
+			<li class="footer__item">
+				Сотрудничество
+			</li>
+			<li class="footer__item">
+				Работать у нас
+			</li>
+		</ul>
+		<div class="navigation__logo">
+			<picture class="navigation__logo-picture-icon">
+				<source media="(min-width: 1440px)" width="450" height="100" type="image/png" srcset="image/logo12.png">
+				<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/logo.png">
+				<img class="navigation__logo-img" src="image/logo12.png" width="140" height="40" alt="Логотип Врамке">
+			</picture>
+		</div>
+	</footer>
+	<!--<main class="main-container">
+
+
 		<section class="main-container__services services">
 			<div class="services__container">
 
@@ -142,7 +201,7 @@
 						<span class="services__text">Мы занимаемся печатью и изготовлением различной рекламной продукции, в частности баннеры, брендирование авто, штендеры, адресные таблички, световые вывески, фотозоны и многого другого.</span>
 					</div>
 					<button class="services__button button-js">
-						Оставить заявку
+						Оставить з аявку
 					</button>
 				</div>
 			</div>
@@ -197,27 +256,8 @@
 			</div>
 		</section>
 	</main>
-	<footer class="main-footer footer">
-		<ul class="footer__list">
-			<li class="footer__item">
-				Контакты
-			</li>
-			<li class="footer__item">
-				Сотрудничество
-			</li>
-			<li class="footer__item">
-				Работать у нас
-			</li>
-		</ul>
-		<div class="navigation__logo">
-			<picture class="navigation__logo-picture-icon">
-				<source media="(min-width: 1440px)" width="450" height="100" type="image/png" srcset="image/logo12.png">
-				<source media="(min-width: 768px)" width="260" height="65" type="image/png" srcset="image/logo.png">
-				<img class="navigation__logo-img" src="image/logo12.png" width="140" height="40" alt="Логотип Врамке">
-			</picture>
-		</div>
-	</footer>
 
+	Модальное окно-->
 	<section class="modal-window modal-window--close" id="contact">
 		<div class="modal-container">
 			<h3 class="contact__subtitle">
@@ -235,11 +275,6 @@
 			</button>
 		</div>
 	</section>
-
-	<!--Модальное окно-->
-	<template id="modalWindow">
-
-	</template>
 
 </body>
 
