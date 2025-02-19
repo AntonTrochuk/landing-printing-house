@@ -215,7 +215,7 @@
 		justify-content: center;
 		width: 1380px;
 		margin: 0 auto;
-		padding: 100px 30px;
+		padding: 80px 30px;
 		box-shadow:
 			0 -10px 15px -5px rgba(0, 0, 0, 0.2), /* Тень сверху */
 			10px 0 15px -5px rgba(0, 0, 0, 0.2),  /* Тень справа */
@@ -456,13 +456,15 @@
 /*-----------clients------------*/
 
 .clients__container {
-	color: white;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 70px;
-	padding: 30px;
-	margin-bottom: 40px;
+    width: 1380px;
+    padding: 80px 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Скрываем всё, что выходит за пределы контейнера */
 }
 
 .clients__subtitle {
@@ -487,87 +489,46 @@
 	margin: 0;
 }
 
+.clients__image-block {
+    overflow: hidden;
+    width: 100%;
+}
 
+.clients__image-track {
+    display: flex;
+    min-width: calc(220px * 10 + 70px * 9);
+    animation: scroll 20s linear infinite;
+    will-change: transform;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.clients__img {
+    border-radius: 50%;
+    flex-shrink: 0;
+    width: 220px;
+    height: 220px;
+    margin-right: 70px;
+}
 
 
 
 /*-------------------------------------------------------------*/
 
 
-
-
-
-
-
-/*----- clients -----*/
-
-
-
-
-.clients__image-block {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-}
-
-.clients__img {
-	border-radius: 50%;
-}
-
-/*----- reviews -----*/
-
-.reviews__card {
-	display: flex;
-	flex-direction: column;
-	font-family: "Jura", serif;
-	background-color: #C5F948;
-	border-radius: 30px;
-	padding: 20px;
-}
-
-.reviews__subtitle {
-	margin: 0;
-	font-size: 50px;
-}
-
-.reviews__list {
-	list-style: none;
-	padding: 0;
-	display: flex;
-	gap: 30px;
-}
-
-.reviews__item {
-	display: flex;
-	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-	border-radius: 20px;
-	padding: 25px;
-	gap: 20px;
-	background-color: white;
-}
-
-.reviews__img {
-	object-fit: cover;
-	border-radius: 10px;
-}
-
-.reviews__text {
-	font-size: 23px;
-	font-weight: 600;
-	text-align: justify;
-	margin: 0;
-	padding-bottom: 10px;
-}
-
-.reviews__subtitle-small {
-	font-size: 30px;
-	margin: 0;
-}
-
 /*----- footer -----*/
 
 .main-footer {
-	margin-top: 40px;
+	width: 1380px;
+	margin: 0 auto;
+	padding: 0 30px;
 	height: 150px;
 	background-color:var(--basic-color);
 }
