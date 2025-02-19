@@ -3,7 +3,7 @@ const sliders = document.querySelectorAll('.image-slider');
 sliders.forEach((slider) => {
 	const buttonRight = slider.querySelector('.slider-button-right');
 	const buttonLeft = slider.querySelector('.slider-button-left');
-	const images = Array.from(slider.querySelectorAll('.services__img'));
+	const images = Array.from(slider.querySelectorAll('.about-section__img'));
 	let currentIndex = 0;
 
 

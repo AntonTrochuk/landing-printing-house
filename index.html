@@ -83,12 +83,12 @@
 					</div>
 					<ul class="we-offer__list">
 						<li class="we-offer__item">
-							<a class="we-offer__link offer-text-link link-advertising" href="#">
+							<a class="we-offer__link offer-text-link link-advertising" href="#advertising">
 								Наружная реклама
 							</a>
 						</li>
 						<li class="we-offer__item">
-							<a class="we-offer__link offer-text-link link-digital " href="#">
+							<a class="we-offer__link offer-text-link link-digital " href="#digital">
 								Цифровая печать
 							</a>
 						</li>
@@ -109,29 +109,89 @@
 		</section>
 
 		<section class="main-container__about-section about-section">
-			<div class="about-section">
-				<ul class="about-section__card">
+			<div class="about-section__block">
+				<ul class="about-section__card" id="advertising">
 					<li class="about-section__item section-image image-slider">
-						<img class="services__img advertising-img" src="/image/slider1.jpg" width="910" height="500" alt="">
-						<img class="services__img advertising-img visually-hidden" src="/image/slider2.jpg" width="910" height="500" alt="">
-						<button class="services__button-image slider-button-left" type="button"></button>
-						<button class="services__button-image slider-button-right" type="button"></button>
+						<img class="about-section__img" src="/image/slider1.jpg" width="960" height="500" alt="">
+						<img class="about-section__img visually-hidden" src="/image/slider2.jpg" width="960" height="500" alt="">
+						<button class="about-section__button-image slider-button-left" type="button"></button>
+						<button class="about-section__button-image slider-button-right" type="button"></button>
 					</li>
 					<li class="about-section__item section-text">
-						<h3 class="services__subtitle">
+						<h3 class="about-section__subtitle heading3">
 							Наружная реклама
 						</h3>
-						<div class="services__section-text advertising-text">
-							<p class="services__text">
-								Мы занимаемся печатью и изготовлением различной рекламной продукции, в частности баннеры, брендирование авто, штендеры, адресные таблички, световые вывески, фотозоны и многого другого.
-							</p>
-						</div>
-						<button class="services__button button-js">
+						<p class="about-section__text second-text">
+							Мы занимаемся печатью и изготовлением различной рекламной продукции, в частности баннеры, брендирование авто, штендеры, адресные таблички, световые вывески, фотозоны и многого другого.
+						</p>
+
+						<button class="about-section__button about-text-button button-js">
 							Оставить заявку
 						</button>
 					</li>
-
 				</ul>
+				<ul class="about-section__card" id="digital">
+					<li class="about-section__item section-text">
+						<h3 class="about-section__subtitle heading3">
+							Цифровая печать
+						</h3>
+						<p class="about-section__text second-text">
+							Это современный метод печати, где изображение отправляется непосредственно с компьютера на печатное устройство. Этот метод отличается от традиционной офсетной печати и трафаретной печати (ситопечати), которые требуют печатных форм, пластин или пленок.
+						</p>
+						<button class="about-section__button about-text-button button-js">
+							Оставить заявку
+						</button>
+					</li>
+					<li class="about-section__item section-text">
+						<img class="about-section__img" src="/image/about-image2.jpg" width="480" height="500" alt="">
+					</li>
+					<li class="about-section__item section-text">
+						<video loop="" muted="" autoplay="" poster="video/plane.jpg" class="fullscreen-bg__video">
+							<source src="/image/about-video.MP4" type="video/mp4">
+						</video>
+					</li>
+				</ul>
+				<ul class="about-section__card" id="digital">
+					<li class="about-section__item section-text">
+						<video loop="" muted="" autoplay="" poster="video/plane.jpg" class="fullscreen-bg__video">
+							<source src="/image/about-video1.MOV" type="video/mp4">
+						</video>
+					</li>
+					<li class="about-section__item section-text">
+						<img class="about-section__img" src="/image/about-image3.jpg" width="480" height="500" alt="">
+					</li>
+					<li class="about-section__item section-text">
+						<h3 class="about-section__subtitle heading3">
+							Сувенирные товары
+						</h3>
+						<p class="about-section__text second-text">
+							Это современный метод печати, где изображение отправляется непосредственно с компьютера на печатное устройство. Этот метод отличается от традиционной офсетной печати и трафаретной печати (ситопечати), которые требуют печатных форм, пластин или пленок.
+						</p>
+						<button class="about-section__button about-text-button button-js">
+							Оставить заявку
+						</button>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="main-container__clients clients">
+			<div class="clients__container">
+				<div class="clients__text-block">
+					<h2 class="clients__subtitle heading2">
+						Среди наших клиентов:
+					</h2>
+					<span class="clients__text second-text">
+						Нам доверяют много известных компаний, будьте и вы в их числе
+					</span>
+				</div>
+				<div class="clients__image-block">
+					<img class="clients__img" width="220" height="220" src="/image/c1.svg" alt="">
+					<img class="clients__img" width="220" height="220" src="/image/c2.svg" alt="">
+					<img class="clients__img" width="220" height="220" src="/image/c3.svg" alt="">
+					<img class="clients__img" width="220" height="220" src="/image/c1.svg" alt="">
+					<img class="clients__img" width="220" height="220" src="/image/c2.svg" alt="">
+				</div>
 			</div>
 		</section>
 	</main>
@@ -159,71 +219,7 @@
 	<!--<main class="main-container">
 
 
-		<section class="main-container__services services">
-			<div class="services__container">
 
-			</div>
-			<div class="services__card souvenir">
-				<div class="services__container-image image-slider">
-					<img class="services__img" src="/image/p3.jpg" width="800" height="550" alt="">
-					<img class="services__img visually-hidden" src="/image/p4.jpg" width="800" height="550" alt="">
-					<img class="services__img visually-hidden" src="/image/p2.jpg" width="800" height="550" alt="">
-					<img class="services__img visually-hidden" src="/image/p1.jpg" width="800" height="550" alt="">
-					<button class="services__button-image slider-button-left" type="button"></button>
-					<button class="services__button-image slider-button-right" type="button"></button>
-				</div>
-				<div class="services__description souvenir-description">
-					<h3 class="services__subtitle">
-						Сувенирные товары
-					</h3>
-					<div class="services__section-text souvenir-text">
-						<span class="services__text">Мы занимаемся печатью и изготовлением различной рекламной продукции, в частности баннеры, брендирование авто, штендеры, адресные таблички, световые вывески, фотозоны и многого другого.</span>
-					</div>
-					<button class="services__button button-js">
-						Оставить заявку
-					</button>
-				</div>
-			</div>
-			<div class="services__card digital">
-				<div class="services__container-image image-slider">
-					<img class="services__img" src="/image/p4.jpg" width="800" height="550" alt="">
-					<img class="services__img" src="/image/p1.jpg" width="800" height="550" alt="">
-					<img class="services__img" src="/image/p2.jpg" width="800" height="550" alt="">
-					<img class="services__img" src="/image/p3.jpg" width="800" height="550" alt="">
-					<button class="services__button-image slider-button-left" type="button"></button>
-					<button class="services__button-image slider-button-right" type="button"></button>
-				</div>
-				<div class="services__description digital-description">
-					<h3 class="services__subtitle">
-						Цифровая печать
-					</h3>
-					<div class="services__section-text digital-text">
-						<span class="services__text">Мы занимаемся печатью и изготовлением различной рекламной продукции, в частности баннеры, брендирование авто, штендеры, адресные таблички, световые вывески, фотозоны и многого другого.</span>
-					</div>
-					<button class="services__button button-js">
-						Оставить з аявку
-					</button>
-				</div>
-			</div>
-			</div>
-		</section>
-		<section class="main-container__clients clients">
-			<div class="clients__container">
-				<h3 class="clients__subtitle">
-					Среди наших клиентов:
-				</h3>
-				<span class="clients__text">
-					Нам доверяют много известных компаний, будьте и вы в их числе
-				</span>
-				<div class="clients__image-block">
-					<img class="clients__img" width="220" height="220" src="/image/c1.svg" alt="">
-					<img class="clients__img" width="220" height="220" src="/image/c2.svg" alt="">
-					<img class="clients__img" width="220" height="220" src="/image/c3.svg" alt="">
-					<img class="clients__img" width="220" height="220" src="/image/c1.svg" alt="">
-					<img class="clients__img" width="220" height="220" src="/image/c2.svg" alt="">
-				</div>
-			</div>
-		</section>
 		<section class="main-container__reviews reviews">
 			<div class="reviews__card">
 				<h3 class="reviews__subtitle">
