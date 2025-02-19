@@ -38,7 +38,7 @@
 
 .text-header-link {
 	font-family: "Montserrat", sans-serif;
-	font-size: 22px;
+	font-size: 17px;
 	font-weight: 500;
 }
 
@@ -571,7 +571,7 @@
     height: 576px;
     border-radius: 35px;
     margin: 0 auto;
-    margin-top: 396px;
+    margin-top: 185px;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 	position: relative;
