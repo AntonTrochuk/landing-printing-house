@@ -281,7 +281,7 @@
     &::before {
         content: '';
         display: inline-block;
-		background-image: url('./image/free-icon-billboard-8674717.png');
+		background-image: url('./image/icon-billboard.svg');
 		background-size: cover;
         background-repeat: no-repeat;
         vertical-align: middle;
@@ -299,7 +299,7 @@
         display: inline-block;
         width: 70px;
         height: 70px;
-        background-image: url('./image/free-icon-printer-2432596.png');
+        background-image: url('./image/icon-printer.svg');
         background-size: cover;
         background-repeat: no-repeat;
         vertical-align: middle;
@@ -312,7 +312,7 @@
         display: inline-block;
         width: 70px;
         height: 70px;
-        background-image: url('./image/free-icon-souvenir-bag-17040934.png');
+        background-image: url('./image/icon-souvenir.svg');
         background-size: cover;
         background-repeat: no-repeat;
         vertical-align: middle;
