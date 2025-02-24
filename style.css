@@ -38,8 +38,13 @@
 
 .text-header-link {
 	font-family: "Montserrat", sans-serif;
-	font-size: 17px;
+	font-size: 12px;
 	font-weight: 500;
+
+	@media (min-width: 1440px) {
+		font-size: 17px;
+		font-weight: 500;
+	}
 }
 
 .offer-text-link {
@@ -51,7 +56,12 @@
 .text-button {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 14px;
+
+	@media (min-width: 1440px) {
+		font-weight: 600;
+		font-size: 20px;
+	}
 }
 
 .about-text-button {
@@ -69,8 +79,13 @@
 
 .heading1 {
 	font-family: "Montserrat", sans-serif;
-	font-size: 55px;
+	font-size: 20px;
 	font-weight: 700;
+
+	@media (min-width: 1440px) {
+		font-size: 55px;
+		font-weight: 700;
+	}
 }
 
 .heading2 {
@@ -108,6 +123,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	min-width: 280px;
+	margin: 0 auto;
+	padding: 10px;
 
 	@media (min-width: 1440px) {
 		width: 1380px;
@@ -117,10 +135,19 @@
 	}
 }
 
-.navigation__communication {
+.navigation__logo {
+	display: none;
 
 	@media (min-width: 1440px) {
-		display: flex;
+		display: block;
+	}
+}
+
+.navigation__communication {
+	display: flex;
+	flex-direction: column;
+
+	@media (min-width: 1440px) {
 		flex-direction: column;
 	}
 }
@@ -136,6 +163,7 @@
 	padding: 0;
 	margin: 0;
 	display: flex;
+	gap: 7px;
 
 	@media (min-width: 1440px) {
 		gap: 20px;
@@ -157,31 +185,44 @@
 }
 
 .initial-banner__slogan {
-	width: 1440px;
-	margin: 0 auto;
-	padding: 0;
 	position: relative;
 	display: flex;
+
+	@media (min-width: 1440px) {
+		width: 1440px;
+		margin: 0 auto;
+		padding: 0;
+	}
 }
 
 .fullscreen-bg__video {
 	width: 100%;
-    height: 700px;
+    height: 500px;
     object-fit: cover;
     z-index: -1;
     overflow: hidden;
 	border-radius: 4px;
+
+	@media (min-width: 1440px) {
+		width: 100%;
+    	height: 700px;
+	}
 }
 
 .initial-banner__block-text {
     position: absolute;
     display: flex;
-    align-items: end;
-    justify-content: space-between;
-    width: 1360px;
-    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
+	align-items: end;
+	bottom: 20px;
+
+	@media (min-width: 1440px) {
+		align-items: end;
+		justify-content: space-between;
+		width: 1360px;
+		bottom: 40px;
+	}
 }
 
 .initial-banner__subtitle {
@@ -194,6 +235,7 @@
 }
 
 .initial-banner__button {
+	padding: 10px 25px;
 	text-decoration: none;
 	color: var(--text-basic-color);
 	text-transform: uppercase;
