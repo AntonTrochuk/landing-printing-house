@@ -201,6 +201,17 @@
 	border-radius: 4px;
 	z-index: 3;
 	border: none;
+	cursor: pointer;
+
+	&:hover {
+		background-color: var(--text-basic-color);
+		color: var(--second-color);
+	}
+
+	&:active {
+		background-color: var(--border-color);
+		color: var(--second-color);
+	}
 
 	@media (min-width: 1440px) {
 		padding: 20px 35px;
@@ -428,6 +439,17 @@
 	background-color: var(--text-basic-color);
 	border-radius: 4px;
 	padding: 10px 20px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: var(--background-color);
+		color: var(--second-color);
+	}
+
+	&:active {
+		background-color: var(--border-color);
+		color: var(--second-color);
+	}
 }
 
 .services__container-image {
@@ -544,8 +566,6 @@
 /*----- map -----*/
 
 .map__iframe {
-	width: 1440px;
-	height: 600px;
 	margin: 0 auto;
 	border: none;
 	display: block;
