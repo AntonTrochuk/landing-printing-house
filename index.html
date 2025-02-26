@@ -123,9 +123,21 @@
 			<div class="about-section__block">
 				<ul class="about-section__card" id="advertising">
 					<li class="about-section__item section-image image-slider">
-						<img class="about-section__img" src="/image/image-slider1@1x.png" width="960" height="500" alt="">
-						<img class="about-section__img visually-hidden" src="/image/image-slider2@1x.png" width="960" height="500" alt="">
-						<img class="about-section__img visually-hidden" src="/image/image-slider3@1x.png" width="960" height="500" alt="">
+						<picture>
+							<source media="(min-width: 1440px)" width="960" height="500" type="image/png" srcset="/image/image-slider1@1x.png">
+							<source media="(min-width: 768px)" width="960" height="500" type="image/png" srcset="/image/pinterest1.svg">
+							<img class="about-section__img" src="/image/image-slider1@1x.png" width="320" height="200" alt="">
+						</picture>
+						<picture>
+							<source media="(min-width: 1440px)" width="960" height="500" type="image/png" srcset="/image/image-slider1@1x.png">
+							<source media="(min-width: 768px)" width="960" height="500" type="image/png" srcset="/image/image-slider2@1x.png">
+							<img class="about-section__img visually-hidden" src="/image/image-slider2@1x.png" width="320" height="200" alt="">
+						</picture>
+						<picture>
+							<source media="(min-width: 1440px)" width="960" height="500" type="image/png" srcset="/image/image-slider3@1x.png">
+							<source media="(min-width: 768px)" width="960" height="500" type="image/png" srcset="/image/image-slider3@1x.png">
+							<img class="about-section__img visually-hidden" src="/image/image-slider3@1x.png" width="320" height="200" alt="">
+						</picture>
 						<button class="about-section__button-image slider-button-left" type="button"></button>
 						<button class="about-section__button-image slider-button-right" type="button"></button>
 					</li>
@@ -154,23 +166,31 @@
 							Оставить заявку
 						</button>
 					</li>
-					<li class="about-section__item section-text">
-						<img class="about-section__img" src="/image/about-image2@1x.jpg" width="480" height="500" alt="">
+					<li class="about-section__item section-image">
+						<picture>
+							<source media="(min-width: 1440px)" width="480" height="500" type="image/jpg" srcset="/image/about-image2@1x.jpg">
+							<source media="(min-width: 768px)" width="480" height="500" type="image/jpg" srcset="/image/about-image2@1x.jpg">
+							<img class="about-section__img" src="/image/about-image2@1x.jpg" width="320" height="400" alt="">
+						</picture>
 					</li>
-					<li class="about-section__item section-text">
+					<li class="about-section__item section-video">
 						<video loop="" muted="" autoplay="" poster="video/plane.jpg" class="fullscreen-bg__video">
 							<source src="/image/about-video.MP4" type="video/mp4">
 						</video>
 					</li>
 				</ul>
 				<ul class="about-section__card" id="digital">
-					<li class="about-section__item section-text">
+					<li class="about-section__item section-video">
 						<video loop="" muted="" autoplay="" poster="video/plane.jpg" class="fullscreen-bg__video">
 							<source src="/image/about-video1.MOV" type="video/mp4">
 						</video>
 					</li>
-					<li class="about-section__item section-text">
-						<img class="about-section__img" src="/image/about-image3.jpg" width="480" height="500" alt="">
+					<li class="about-section__item section-image">
+						<picture>
+							<source media="(min-width: 1440px)" width="480" height="500" type="image/jpg" srcset="/image/about-image3.jpg">
+							<source media="(min-width: 768px)" width="480" height="500" type="image/jpg" srcset="/image/about-image3.jpg">
+							<img class="about-section__img" src="/image/about-image3.jpg" width="320" height="400" alt="">
+						</picture>
 					</li>
 					<li class="about-section__item section-text">
 						<h3 class="about-section__subtitle heading3">
@@ -198,8 +218,16 @@
 						</button>
 					</li>
 					<li class="about-section__item section-image image-slider">
-						<img class="about-section__img" src="/image/printing-image2.jpg" width="960" height="500" alt="">
-						<img class="about-section__img visually-hidden" src="/image/printing-image1.jpg" width="960" height="500" alt="">
+						<picture>
+							<source media="(min-width: 1440px)" width="960" height="500" type="image/jpg" srcset="/image/printing-image2.jpg">
+							<source media="(min-width: 768px)" width="960" height="500" type="image/jpg" srcset="/image/printing-image2.jpg">
+							<img class="about-section__img visually-hidden" src="/image/printing-image2.jpg" width="320" height="200" alt="">
+						</picture>
+						<picture>
+							<source media="(min-width: 1440px)" width="960" height="500" type="image/jpg" srcset="/image/printing-image1.jpg">
+							<source media="(min-width: 768px)" width="960" height="500" type="image/jpg" srcset="/image/printing-image1.jpg">
+							<img class="about-section__img visually-hidden" src="/image/printing-image1.jpg" width="320" height="200" alt="">
+						</picture>
 						<button class="about-section__button-image slider-button-left" type="button"></button>
 						<button class="about-section__button-image slider-button-right" type="button"></button>
 					</li>
